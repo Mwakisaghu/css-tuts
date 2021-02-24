@@ -2,11 +2,27 @@ main {
     padding-top: 16px;
 }
 
+.background {
+    background: url("../basics/pc.jpg");
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.package__badge {
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    margin: 32px;
+}
+
 .package {
     width: 80%;
     margin: 16px 0px;
     border: 3px solid #0e4f1f;
     border-left: none;
+    position: relative;
 }
 
 .package:hover,
@@ -38,7 +54,7 @@ main {
     clear: both;
 }
 
-#plus {
+#plan {
     background: rgba(213, 255, 220, 0.95);
 }
 
