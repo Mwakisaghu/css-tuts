@@ -16,17 +16,19 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 70vh;
+    position: relative;
 }
     
 #product-overview h1 {
     color: black;
     font-family: cursive;
     position: absolute;
-    bottom: 5%;  
+    bottom:10%; 
+    left: 3%; 
     font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) and (orientation: potrait) {
+@media (min-width: 40rem) and (min-height: 40rem) {
     #product-overview h1 {
         height: 40vh;
         background-position: 50% 25%;
@@ -100,7 +102,7 @@ body {
     margin: 8px 0px;
 }
 
-@media (min-width: 40rem) and (orientation: landscape) {
+@media (min-width: 40rem) /*and (orientation: landscape)*/ {
     .plan__list {
         width: 100%;
         /*margin: auto;*/ 
